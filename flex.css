@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.container {
+    max-width: 1195px;
+    margin: 0 auto;
+}
+
+header {
+    background: #6e78b7;
+    padding: 55px 0;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu a {
+    width: 260px;
+    background: #d86a43;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px -1px #000;
+}
+
+header .menu a:hover {
+    box-shadow: none;
+    background: #e44d26;
+
+}
+
+main {
+    background: #deeafb;
+    padding: 55px 0;
+}
+
+.technology {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.technology img {
+    width: 360px;
+    height: 200px;
+}
+
+.technology .arrow {
+    width: 41px;
+    height: 22px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 360px;
+    height: 230px;
+    margin-bottom: 35px;
+}
+
+.news article {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px 15px 7px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.news article .description {
+    color: #511a99;
+}
+
+.news article img {
+    width: 340px;
+    height: 225px;
+    margin-right: 55px;
+}
+
+.news article:nth-child(even) img {
+    order: 1;
+    margin: 0 0 0 55px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    width: 400px;
+    height: 425px;
+    background: #6e78b7;
+    color: white;
+    box-shadow: 0 0 10px 1px black;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .card h3 {
+    background: #e44d26;
+    margin: 0;
+    padding: 25px 0 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cards .card .description {
+    padding: 25px 40px 0 40px
+}
+
+.cards .card .btn {
+    height: 55px;
+    text-align: center;
+    width: 260px;
+    background: #e44d26;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    display: block;
+    margin: auto auto 0;
+    border-radius: 8px;
+    padding: 14px 0;
+    box-shadow: 0 0 10px 1px black;
+}
+
+footer {
+    background: #6e78b7;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    padding: 110px 0 105px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .technology {
+        flex-direction: column;
+    }
+
+    .technology img {
+        width: 100%;
+        max-width: 620px;
+        max-height: 300px;
+        height: auto;
+        margin-bottom: 50px;
+
+    }
+
+    .technology .arrow {
+        display: none;
+    }
+
+    .gallery img {
+        flex-grow: 1;
+        height: auto;
+    }
+
+    .news article .description {
+        flex-shrink: 2;
+        width: 100%;
+    }
+
+    .news article img {
+        flex-shrink: 1;
+
+    }
+
+}
+
+@media screen and (max-width:981px) {
+    .cards .card {
+        margin-bottom: 80px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    header .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .menu a {
+        width: 90%;
+        margin-bottom: 45px;
+    }
+
+    main {
+        padding-top: 30px;
+    }
+
+    .news article {
+        flex-direction: column;
+        padding: 50px 40px 60px;
+        margin: 0 24px 70px;
+        align-items: center;
+    }
+
+    .news article .description {
+        font-size: 25px;
+
+    }
+
+    .news article img {
+        width: 100%;
+        max-height: 350px;
+        margin-right: 0;
+
+    }
+
+    .news article:nth-child(even) img {
+        order: 0;
+        margin-left: 0;
+
+    }
+
+    .cards .card {
+
+        max-width: 625px;
+        width: 100%;
+        min-height: 665px;
+    }
+
+    .cards .card h3 {}
+
+    .cards .card .description {}
+
+    .cards .card .btn {
+        font-size: 29px;
+        width: 315px;
+        height: 65px;
+        padding: 16px 0;
+    }
+
+    .footer {
+        padding: 55px 0 50px;
+    }
+}
